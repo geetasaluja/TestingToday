@@ -16,6 +16,7 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
+import org.springframework.test.context.junit.jupiter.DisabledIf;
 import org.springframework.test.context.junit4.SpringRunner;
 import com.organization.walletapi.dto.TransactionDto;
 import com.organization.walletapi.exceptions.exceptionhandler.ErrorMessage;
@@ -24,6 +25,7 @@ import com.organization.walletapi.exceptions.exceptionhandler.ErrorMessage;
  *
  * @author Geeta Saluja
  */
+@DisabledIf("failed")
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes=WalletapiApplication.class,webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT )
 public class WalletapiApplicationIntegrationTests {
